@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.buttonText {
+  font-family: "Inter", sans-serif !important;
+  font-size: 1rem;
+}
+
+.modalDialogContainer {
+  position: relative;
+}
+
+.modalInputField {
+  position: absolute;
+  height: 50px;
+}
+
+.textButtonContainer {
+  text-decoration: none;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+}
+
+.textButtonContainer:hover {
+  color: #1f4583 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #1f4583 !important;
+  text-underline-offset: 6px !important;
+  text-decoration-thickness: 2px !important;
+}

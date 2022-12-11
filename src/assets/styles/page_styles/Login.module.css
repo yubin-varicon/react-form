@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.mainContainer {
+  height: 100vh;
+  background: linear-gradient(
+    61deg,
+    rgba(94, 6, 129, 1) 17%,
+    rgba(9, 9, 121, 1) 52%,
+    rgba(9, 180, 144, 1) 95%
+  );
+}
+
+.formHeading {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.loginFormContainer {
+  padding: 2%;
+  border-radius: 14px;
+  background-color: white;
+  opacity: 0.95;
+}
+
+.inputContainer {
+  margin-bottom: 10%;
+}
+
+.inputField {
+  width: 100%;
+}
+
+.loginSubmitButtonContainer {
+  text-align: center;
+  /* background-color: red; */
+}
+
+.loginSubmitButton {
+  width: 35%;
+  height: 40px;
+  background-color: #090979 !important;
+}
+
+.loginSubmitButton:hover {
+  background-color: #05054f !important;
+}
+
+.forgotPasswordContainer {
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.registerParagraph {
+  margin-top: 10%;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.registerLink {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+}
+
+.registerLink:hover {
+  color: #1f4583 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #1f4583 !important;
+  text-underline-offset: 6px !important;
+  text-decoration-thickness: 2px !important;
+}
