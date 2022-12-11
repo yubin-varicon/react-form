@@ -1,7 +1,8 @@
-import { Grid, Button, TextField } from "@mui/material";
 import React, { useEffect } from "react";
-import Styles from "../../assets/styles/page_styles/Login.module.css";
+import { Link } from "react-router-dom";
+import { Grid, Button, TextField } from "@mui/material";
 import { InputModal } from "../../components";
+import Styles from "../../assets/styles/page_styles/Login.module.css";
 
 const Login = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Login = () => {
         lg={4}
         md={6}
         sm={10}
-        xs={12}
+        xs={10}
         className={Styles.loginFormContainer}
       >
         <h1 className={Styles.formHeading}>Login</h1>
@@ -73,9 +74,9 @@ const Login = () => {
 
         <p className={Styles.registerParagraph}>
           Don't have an account yet?{" "}
-          <a href="signup" className={Styles.registerLink}>
+          <Link to="/signup" className={Styles.registerLink}>
             Sign Up
-          </a>
+          </Link>
         </p>
       </Grid>
     </Grid>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "@mui/material/Button";
 import {
+  Button,
   Typography,
   TextField,
   Dialog,
@@ -38,8 +38,6 @@ const InputModal = ({
   };
 
   const handleSubmit = () => {
-    handleEmptyError();
-
     if (!isFormInvalid && inputData.trim()) {
       alert(
         `Password reset link has been sent to ${inputData}. Please check your inbox.`
@@ -59,13 +57,15 @@ const InputModal = ({
         className={Styles.textButtonContainer}
         style={{ textTransform: "none", color: "#000" }}
       >
-        <Typography className="buttonText">{modalButtonLabel}</Typography>
+        <Typography className={Styles.buttonText}>
+          {modalButtonLabel}
+        </Typography>
       </Button>
 
       <Dialog
         open={open}
         onClose={handleClose}
-        className="modalDialogContainer"
+        className={Styles.modalDialogContainer}
       >
         <DialogTitle>{modalTitle}</DialogTitle>
 
@@ -73,7 +73,6 @@ const InputModal = ({
           <DialogContentText>{modalSubTitle}</DialogContentText>
 
           <TextField
-            autoFocus
             margin="dense"
             name={inputFieldName}
             id={inputFieldName}
@@ -88,7 +87,7 @@ const InputModal = ({
             }}
             error={isFormInvalid}
             helperText={isFormInvalid && "Cannot be empty"}
-            className="modalInputField"
+            className={Styles.modalInputField}
           />
         </DialogContent>
 
