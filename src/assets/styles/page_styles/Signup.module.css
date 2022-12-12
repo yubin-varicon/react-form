@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.mainContainer {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 105, 126, 1) 0%,
+    rgba(95, 3, 101, 1) 100%
+  );
+}
+
+.signupFormContainer {
+  height: 90%;
+  overflow-y: scroll;
+  padding: 2%;
+  border-radius: 4px;
+  opacity: 0.95;
+  background-color: white;
+}
+
+.formHeaderContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10%; */
+  margin-bottom: 12%;
+}
+
+.formHeading {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.inputContainer {
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.inputField {
+  width: 100%;
+  text-align: left;
+}
+
+.buttonContainer {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signupButton {
+  width: 30%;
+  height: 40px;
+  align-self: center;
+  background-color: #090979 !important;
+}
+
+.signupButton:hover {
+  background-color: #05054f !important;
+}
+
+.cancelButton {
+  width: 30%;
+  height: 40px;
+  align-self: center;
+}

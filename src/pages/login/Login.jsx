@@ -6,7 +6,7 @@ import Styles from "../../assets/styles/page_styles/Login.module.css";
 
 const Login = () => {
   useEffect(() => {
-    document.title = "Login Page";
+    document.title = "Login";
   }, []);
 
   return (
