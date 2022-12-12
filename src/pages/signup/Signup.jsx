@@ -133,7 +133,7 @@ const Signup = () => {
 
           <div className={Styles.buttonContainer}>
             <Button
-              type="button"
+              type="submit"
               variant="contained"
               className={Styles.signupButton}
               // onClick={handleSubmit}
@@ -142,7 +142,7 @@ const Signup = () => {
             </Button>
 
             <Button
-              type="submit"
+              type="reset"
               variant="outlined"
               className={Styles.cancelButton}
               // onClick={handleCancel}
